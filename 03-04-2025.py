@@ -160,3 +160,68 @@ for i in range(size):
         else:
             print(" ", end=" ")
     print()
+
+
+'''Task 3'''
+
+
+'''1) Reverse a list in Python'''
+li=[1,2,3,4,5]
+li=li[::-1]
+print(li)
+
+'''2) Concatenate two lists index-wise'''
+a=[1,2,3,4,5]
+b=[2,3,4,5,6]
+result=[a[i]+b[i] for i in range(len(a))]
+print(result)
+
+'''3) Turn every item of a list into its square'''
+a=[1,2,3,4,5]
+res=[i*i for i in a]
+print(res)
+
+'''4) Concatenate two lists in the following order'''
+a=[1,2,3,4,5]
+b=[2,3,4,5,6]
+res=a+b
+print(res)
+
+'''5) Iterate both lists simultaneously'''
+a=[1,2,3]
+b=[4,5,6]
+for i in range(len(a)):
+    print(a[i],b[i])
+
+'''6) Remove empty strings from the list of strings'''
+a=['abc',' ','bcd']
+for i in a:
+    if i==' ':
+        a.remove(i)
+print(a)
+
+'''7) Exercise 7: Add new item to list after a specified item'''
+a=[1,2,4,5]
+b=7
+a.append(b)
+print(a)
+
+'''8) Extend nested list by adding the sublist'''
+a=[1,2,3,4,5]
+b=[6,7,8,9,10]
+a.extend(b)
+print(a)
+
+'''9)Replace lists item with new value if found'''
+a=[1,3,4,5,6]
+for i in range(len(a)):
+    if(a[i]==5):
+        a[i]=8
+print(a)
+
+'''10) Remove all occurrences of a specific item from a list.'''
+a=[2,1,2,1,3,4,2,5]
+for i in range(len(a)):
+    if(a[i]==2):
+        a.remove(a[i])
+print(a)
