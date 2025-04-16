@@ -1,0 +1,5 @@
+class overDraftLimitExcededException(Exception):
+    def __init__(selfs,str):
+        super().__init__(str)
+
+__all__=['overDraftLimitExcededException']
